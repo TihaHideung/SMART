@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp"
+            android:gravity="center_horizontal"
+            android:background="@drawable/background_splash">
+
+            <!-- Tombol kembali -->
+            <ImageView
+                android:id="@+id/btnBack"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/left"
+                android:layout_gravity="start"
+                android:layout_marginTop="12dp" />
+
+            <!-- Logo aplikasi -->
+            <ImageView
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_gravity="center"
+                android:src="@drawable/logosmart"
+                android:layout_marginTop="8dp" />
+
+            <!-- Foto profil -->
+            <FrameLayout
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="16dp">
+
+                <!-- Gambar profil (klikable) -->
+                <ImageView
+                    android:id="@+id/imageProfile"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/user"
+                    android:background="@drawable/circle_mask"
+                    android:clickable="true"
+                    android:focusable="true" />
+
+                <!-- Ikon kamera -->
+                <ImageView
+                    android:id="@+id/iconCamera"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_gravity="bottom|end"
+                    android:layout_margin="8dp"
+                    android:src="@drawable/camera"
+                    android:background="@drawable/circle_white"
+                    android:padding="6dp" />
+            </FrameLayout>
+
+            <!-- Teks motivasi -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Change Your\nLife Today"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#444444"
+                android:layout_marginTop="16dp" />
+
+            <!-- Input nama -->
+            <TextView
+                android:id="@+id/text_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginTop="24dp"
+                android:padding="12dp"
+                android:background="@drawable/border"
+                />
+
+            <!-- Tombol Launch -->
+            <Button
+                android:id="@+id/btn_launch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Launch"
+                android:background="@drawable/button_rounded"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="12dp" />
+        </LinearLayout>
+</FrameLayout>

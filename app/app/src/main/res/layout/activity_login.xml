@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Konten Login -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp"
+            android:background="@drawable/background_splash"
+            android:gravity="center_horizontal">
+
+            <!-- Logo atas -->
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/logosmart"
+                android:layout_marginTop="26dp" />
+
+            <!-- Ilustrasi orang belajar -->
+            <ImageView
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/work"
+                android:layout_marginTop="10dp"
+                android:adjustViewBounds="true" />
+
+            <!-- Teks motivasi -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Organize your\nstudy schedule better."
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textColor="#444444"
+                android:layout_marginTop="24dp"
+                android:textStyle="bold" />
+
+            <!-- Input Username -->
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Username/email"
+                android:textColorHint="@color/black"
+                android:background="@drawable/border"
+                android:layout_marginTop="24dp"
+                android:padding="12dp"
+                android:textColor="@color/black"/>
+
+            <!-- Input Password -->
+            <EditText
+                android:id="@+id/input_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:textColorHint="@color/black"
+                android:inputType="textPassword"
+                android:background="@drawable/border"
+                android:layout_marginTop="12dp"
+                android:padding="12dp"
+                android:textColor="@color/black"/>
+
+            <!-- Buttton Login-->
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Login"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/button_black_rounded"
+                android:textColor="#FFFFFF" />
+
+            <!-- Link daftar -->
+            <TextView
+                android:id="@+id/signup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Belum punya akun?\nDaftar disini"
+                android:textColor="#0000EE"
+                android:textSize="14sp"
+                android:layout_marginTop="8dp"
+                android:textAlignment="center" />
+        </LinearLayout>
+</FrameLayout>
